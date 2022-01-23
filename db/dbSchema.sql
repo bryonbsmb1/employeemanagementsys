@@ -1,9 +1,9 @@
 
 -- // drop the DB and recreate good version to use
 
-DROP DATABASE IF EXISTS employees;
-CREATE DATABASE employees;
-USE employees;
+DROP DATABASE IF EXISTS bryon_employee_mgt_system
+CREATE DATABASE bryon_employee_mgt_system
+USE bryon_employee_mgt_system
 
 
 
