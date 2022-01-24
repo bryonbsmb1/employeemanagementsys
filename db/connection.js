@@ -1,4 +1,4 @@
-
+// Connection for SQL database
 
 const util = require("util");
 const mysql = require("mysql");

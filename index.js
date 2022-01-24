@@ -1,11 +1,11 @@
 const logo = require("asciiart-logo");
 const { prompt } = require("inquirer");
-const db = require(".");
+const db = require("./db");
 require("console.table");
   
   init();
   
-  // logo display and main prompts
+  // Display logo text, load main prompts
   function init() {
     const logoText = logo({ name: "Employee Manager" }).render();
   
@@ -81,7 +81,7 @@ require("console.table");
       }
     ]);
   
-    // call of function 
+    // Call the appropriate function depending on what the user chose
     switch (choice) {
       case "VIEW_EMPLOYEES":
         return viewEmployees();
@@ -453,3 +453,5 @@ require("console.table");
     console.log("Goodbye!");
     process.exit();
   }
+  
+
